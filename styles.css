@@ -1,98 +1,111 @@
-/* General styles go here these styles affect the page as a whole */ 
+/* General styles go here these styles affect the page as a whole */
+ .body {
+    font-family: sans-serif;
+    margin-left: 200px;
+    width: 90vw;
+    height: fit-content;
+}
 
-.body{
-  font-family: sans-serif;
-  } 
-
- .banner {
-    background-color: #D3D3D3;
-    height: 40px;
-    width: 80vw;
-     color: white;
-    text-align: center;
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;
-    border-width: 5px;
-    border-style: double;
-    border-color: #838282;
-     }
-
-     /* these are the styles for my main content */
-.content{
-  width: 800px;
-  height: fit-content;
-  border: 10px double grey;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-  text-align: center;
-  margin-left: 200px;
-   }
-
-
-
-   
-  /* navbar class nav styles */
-  /* These are the general styles for my nav for things such as the background color and positioning */
-  #nav{
-   background-color: #a9a9a9;
-   /* this makes the background color darker than the resting state but not as dark as the footer */
-   position: fixed;
-   left: 0;
-   top: 0;
-   /* this indicates that the position of my footer will be fixed used in combination with */
-   height: 100vh;
-   width: 200px;
-    z-index: -1;
-    border-top-right-radius: 1em;
-   }
-
-
-   
-   /* styles for my sidebars list elements */
-   #nav li{
-      list-style-type: none;
-   }
-
-#nav a{
-
-    text-decoration: none;
-    font-size: 25px;
-    color: #D3D3D3;
-    width: 200px;
-    text-align: center;
- }
-
- #nav a:hover{
+main {
+  background-color: #D3D3D3;
+  width: 1275px;
+  height: 100vh;
   color: white;
- }
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-width: 5px;
+  border-style: double;
+  border-color: #838282;
+  margin-left: 200px;
+}
+
+.bannerimg{
+  width: 1150px;
+  height: 300px;
+  margin: 10px;
+  border: 5px solid #c3c3c3;
+}
+
+.bannertxt{
+  background-color: #838282;
+  margin-left: 200px;
+  padding: 20px;
+  font-size: larger;
+  font-weight: 700;
+  z-index: 1;
+}
+
+
+
+
+/* navbar class nav styles */
+/* These are the general styles for my nav for things such as the background color and positioning */
+nav {
+  background-color: #a9a9a9;
+  /* this makes the background color darker than the resting state but not as dark as the footer */
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* this indicates that the position of my footer will be fixed used in combination with */
+  height: 100vh;
+  width: 200px;
+  z-index: -1;
+  border-top-right-radius: 1em;
+  list-style: none;
+}
+
+nav a {
+
+  text-decoration: none;
+  font-size: 25px;
+  color: #D3D3D3;
+  width: 200px;
+  text-align: center;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav ul{
+  list-style: none;
+}
+
+/* styles for my sidebars list elements */
+nav li {
+  list-style-type: none;
+}
+
+
+
+
 
 
 /* nav footer styles */
-/* I decided to make my footer take up just the bottom of the nav instead of the whole page */
-.sfooter{
-    position: fixed;
-    left: 0;
-    bottom: 0; 
-    /* position in combination with left and bottom keeps my footer fixed to the bottom left of my page in one spot */
-    background-color: #838282;
-    /* changes the background color of my footer to a darker color than my nav  */
-    z-index: 1;
-    /* since I used a z-index of -1 on my nav using 1 puts my footer on top of my nav  */
-   
+/* ______________________________________________________________________________________________________ */
+.sfooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  /* position in combination with left and bottom keeps my footer fixed to the bottom left of my page in one spot */
+  background-color: #838282;
+  /* changes the background color of my footer to a darker color than my nav  */
+  z-index: 1;
+  /* since I used a z-index of -1 on my nav using 1 puts my footer on top of my nav  */
+
 }
+
 /* These styles style the "a" or link element I had to use them to remove the default blue color and underline */
-.sfooter a{
+.sfooter a {
   text-decoration: none;
   /* removes the default markings */
   color: #D3d3d3;
   /* changes the color from blue to a light grey  */
-  
- }
+
+}
 
 
-.sfooter ul{
+.sfooter ul {
   width: 200px;
   /* makes the width of the list 200px  */
   padding: 0%;
@@ -101,7 +114,7 @@
 }
 
 /* this code block focuses on the list elements */
-.sfooter li{
+.sfooter li {
   color: #D3d3d3;
   /* The links are alread grey because of the link style i did earlier but this change the color of my copywrite info */
   background-color: #838282;
@@ -111,7 +124,7 @@
 }
 
 /* adds an action so when users hover they know its a link */
-.sfooter a:hover{
+.sfooter a:hover {
   color: white;
   /* the color changes from the resting state grey to white */
   font-weight: 600;
