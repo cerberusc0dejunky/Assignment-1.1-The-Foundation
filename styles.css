@@ -13,7 +13,7 @@
    /* changes the background color to a dark blue */
     height: 100vh;
    /* sets the height at 100% of the view port height*/
-    width: 250px;
+    width: 200px;
     /* sets the width to 30% */
     z-index: 1;
     /* for items with positions it sets the stacking layer */
@@ -23,7 +23,9 @@
     /* rounds the top right corner relative to its space */
     top: 0;
     left: 0;
+  
    }
+   
 
    .sidebar li{
          list-style-type: none;
@@ -39,16 +41,13 @@ by using z-index:1 I place the sidebar on top of the other elements. if i had do
 .sidebar a{
   display: block;
   /* makes the font display as a vertical navigation */
-    padding: 3px;
-    /* adds 8px padding between content and the border */
     text-decoration: none;
     /* removes the underline and bullet points */
     font-size: 25px;
     /* makes the font larger */
     color: #D3D3D3;
     /* makes the font white */
-    text-align: left;
-
+      
 
 }
 
@@ -59,29 +58,28 @@ by using z-index:1 I place the sidebar on top of the other elements. if i had do
   /* changes the text to white on hover */
     font-weight: 600;
     /* makes the text bolder on hover */
-     
-}
+     }
 /* 
 This is the other half of what I was talking about if you dont add margin-"sidebars size" in this case mine is 30% then it will be hidden under the sidebar because the z-index: 1; raises it above the main content. 
 */
-main{
+.content{
     text-align: center;
-    margin-left: 250px;
+    margin-left: 200px;
+    overflow: ;
   }
 
-header{
-    background-image: url(images/backgrounds/h1.png);
-    background-image: no-repeat;
-    background-image: cover;
-    color: white;
+h1{
+  background-color: #797979;
+  height: 40px;
+  width: 80vw;
+  color: rgb(255, 255, 255);
     text-align: center;
-    margin-left: 250px;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
     border-width: 5px;
-     border-style: solid;
-    border-color: rgb(41 79 109);
-    box-shadow: inset white 3px 2px 20px;
+     border-style: double;
+    border-color: #d3d5d5;
+   
 }
 
 /* footer styles  */
