@@ -1,0 +1,120 @@
+/* General styles go here these styles affect the page as a whole */
+
+.body{
+  font-family: sans-serif;
+  text-align: center;
+  } 
+  
+  /* navbar class sidebar styles */
+  .sidebar{
+   position: fixed;
+   /* fixes the sidebars position */
+    background-color: #a9a9a9;
+   /* changes the background color to a dark blue */
+    height: 100vh;
+   /* sets the height at 100% of the view port height*/
+    width: 250px;
+    /* sets the width to 30% */
+    z-index: 1;
+    /* for items with positions it sets the stacking layer */
+    border-top-left-radius: 1em;
+    /* rounds the top left corner relative to its its space */
+    border-top-right-radius: 1em;
+    /* rounds the top right corner relative to its space */
+    top: 0;
+    left: 0;
+   }
+
+   .sidebar li{
+         list-style-type: none;
+       padding: 0;
+       margin: 0;
+   }
+
+/* 
+by using z-index:1 I place the sidebar on top of the other elements. if i had done -1 it would have put it on the bottom. It's only half of the desired result
+*/
+
+/* styles a link "a" in general specifically styles the links inside the sidebar */
+.sidebar a{
+  display: block;
+  /* makes the font display as a vertical navigation */
+    padding: 3px;
+    /* adds 8px padding between content and the border */
+    text-decoration: none;
+    /* removes the underline and bullet points */
+    font-size: 25px;
+    /* makes the font larger */
+    color: #D3D3D3;
+    /* makes the font white */
+    text-align: left;
+
+
+}
+
+
+/* styles a link "a" elements when you drag your mouse over the element */
+.sidebar a:hover{    
+  color: white;
+  /* changes the text to white on hover */
+    font-weight: 600;
+    /* makes the text bolder on hover */
+     
+}
+/* 
+This is the other half of what I was talking about if you dont add margin-"sidebars size" in this case mine is 30% then it will be hidden under the sidebar because the z-index: 1; raises it above the main content. 
+*/
+main{
+    text-align: center;
+    margin-left: 250px;
+  }
+
+header{
+    background-image: url(images/backgrounds/h1.png);
+    background-image: no-repeat;
+    background-image: cover;
+    color: white;
+    text-align: center;
+    margin-left: 250px;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-width: 5px;
+     border-style: solid;
+    border-color: rgb(41 79 109);
+    box-shadow: inset white 3px 2px 20px;
+}
+
+/* footer styles  */
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #797979;
+  z-index: 2;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+
+footer a{
+  text-decoration: none;
+color: white;
+ display: block;
+ text-align: center;
+  }
+
+footer li{
+  padding: 0;
+  margin: 0;
+ }
+
+footer ul{
+  width: 200px;
+  height: fit-content;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+ }
+
