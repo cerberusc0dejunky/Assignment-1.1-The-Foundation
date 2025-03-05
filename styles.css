@@ -1,118 +1,119 @@
-/* General styles go here these styles affect the page as a whole */
+/* General styles go here these styles affect the page as a whole */ 
 
 .body{
   font-family: sans-serif;
-  text-align: center;
   } 
-  
-  /* navbar class sidebar styles */
-  .sidebar{
-   position: fixed;
-   /* fixes the sidebars position */
-    background-color: #a9a9a9;
-   /* changes the background color to a dark blue */
-    height: 100vh;
-   /* sets the height at 100% of the view port height*/
-    width: 200px;
-    /* sets the width to 30% */
-    z-index: 1;
-    /* for items with positions it sets the stacking layer */
-    border-top-left-radius: 1em;
-    /* rounds the top left corner relative to its its space */
-    border-top-right-radius: 1em;
-    /* rounds the top right corner relative to its space */
-    top: 0;
-    left: 0;
-  
-   }
-   
 
-   .sidebar li{
-         list-style-type: none;
-       padding: 0;
-       margin: 0;
-   }
-
-/* 
-by using z-index:1 I place the sidebar on top of the other elements. if i had done -1 it would have put it on the bottom. It's only half of the desired result
-*/
-
-/* styles a link "a" in general specifically styles the links inside the sidebar */
-.sidebar a{
-  display: block;
-  /* makes the font display as a vertical navigation */
-    text-decoration: none;
-    /* removes the underline and bullet points */
-    font-size: 25px;
-    /* makes the font larger */
-    color: #D3D3D3;
-    /* makes the font white */
-      
-
-}
-
-
-/* styles a link "a" elements when you drag your mouse over the element */
-.sidebar a:hover{    
-  color: white;
-  /* changes the text to white on hover */
-    font-weight: 600;
-    /* makes the text bolder on hover */
-     }
-/* 
-This is the other half of what I was talking about if you dont add margin-"sidebars size" in this case mine is 30% then it will be hidden under the sidebar because the z-index: 1; raises it above the main content. 
-*/
-.content{
-    text-align: center;
-    margin-left: 200px;
-    overflow: ;
-  }
-
-h1{
-  background-color: #797979;
-  height: 40px;
-  width: 80vw;
-  color: rgb(255, 255, 255);
+ .banner {
+    background-color: #D3D3D3;
+    height: 40px;
+    width: 80vw;
+     color: white;
     text-align: center;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
     border-width: 5px;
-     border-style: double;
-    border-color: #d3d5d5;
-   
-}
+    border-style: double;
+    border-color: #838282;
+     }
 
-/* footer styles  */
-footer{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: #797979;
-  z-index: 2;
+     /* these are the styles for my main content */
+.content{
+  width: 800px;
+  height: fit-content;
+  border: 10px double grey;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  text-align: center;
+  margin-left: 200px;
+   }
+
+
+
+   
+  /* navbar class nav styles */
+  /* These are the general styles for my nav for things such as the background color and positioning */
+  #nav{
+   background-color: #a9a9a9;
+   /* this makes the background color darker than the resting state but not as dark as the footer */
+   position: fixed;
+   left: 0;
+   top: 0;
+   /* this indicates that the position of my footer will be fixed used in combination with */
+   height: 100vh;
+   width: 200px;
+    z-index: -1;
+    border-top-right-radius: 1em;
+   }
+
+
+   
+   /* styles for my sidebars list elements */
+   #nav li{
+      list-style-type: none;
+   }
+
+#nav a{
+
+    text-decoration: none;
+    font-size: 25px;
+    color: #D3D3D3;
+    width: 200px;
+    text-align: center;
+ }
+
+ #nav a:hover{
+  color: white;
+ }
+
+
+/* nav footer styles */
+/* I decided to make my footer take up just the bottom of the nav instead of the whole page */
+.sfooter{
+    position: fixed;
+    left: 0;
+    bottom: 0; 
+    /* position in combination with left and bottom keeps my footer fixed to the bottom left of my page in one spot */
+    background-color: #838282;
+    /* changes the background color of my footer to a darker color than my nav  */
+    z-index: 1;
+    /* since I used a z-index of -1 on my nav using 1 puts my footer on top of my nav  */
+   
+}
+/* These styles style the "a" or link element I had to use them to remove the default blue color and underline */
+.sfooter a{
+  text-decoration: none;
+  /* removes the default markings */
+  color: #D3d3d3;
+  /* changes the color from blue to a light grey  */
+  
+ }
+
+
+.sfooter ul{
+  width: 200px;
+  /* makes the width of the list 200px  */
+  padding: 0%;
+  margin: 0%;
+  /* removes the default spacing */
 }
 
-
-footer a{
-  text-decoration: none;
-color: white;
- display: block;
- text-align: center;
-  }
-
-footer li{
-  padding: 0;
-  margin: 0;
- }
-
-footer ul{
-  width: 200px;
-  height: fit-content;
-  text-decoration: none;
-  list-style-type: none;
+/* this code block focuses on the list elements */
+.sfooter li{
+  color: #D3d3d3;
+  /* The links are alread grey because of the link style i did earlier but this change the color of my copywrite info */
+  background-color: #838282;
+  /* changes the background of my nav footer to a color darker than my nav  */
   text-align: center;
-  padding: 0;
-  margin: 0;
- }
+  /* centers the text for each list item */
+}
 
+/* adds an action so when users hover they know its a link */
+.sfooter a:hover{
+  color: white;
+  /* the color changes from the resting state grey to white */
+  font-weight: 600;
+  /* the font gets bolder to emphasize that its a link */
+}
