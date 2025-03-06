@@ -1,15 +1,18 @@
 /* General styles go here these styles affect the page as a whole */
  .body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
     font-family: sans-serif;
     margin-left: 200px;
     width: 90vw;
-    height: fit-content;
+    height: 100%;
 }
 
 main {
   background-color: #D3D3D3;
-  width: 1275px;
-  height: 100vh;
+  width: 80vw;
+  height: 100%;
   color: white;
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
@@ -19,21 +22,25 @@ main {
   margin-left: 200px;
 }
 
-.bannerimg{
-  width: 1150px;
-  height: 300px;
-  margin: 10px;
-  border: 5px solid #c3c3c3;
+
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/meme.png");
+  height: 50%;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  position: absolute;
+
+  color: white;
 }
 
-.bannertxt{
-  background-color: #838282;
-  margin-left: 200px;
-  padding: 20px;
-  font-size: larger;
-  font-weight: 700;
-  z-index: 1;
-}
+
+
+
+
 
 
 
@@ -74,6 +81,11 @@ nav ul{
 /* styles for my sidebars list elements */
 nav li {
   list-style-type: none;
+}
+
+
+.sectiontxt{
+  border: 2px solid grey;
 }
 
 
