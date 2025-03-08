@@ -1,22 +1,9 @@
-.grid-container {
-    display: grid;
-    grid-template-areas:
-    'header header'
-    'sidebar content'
-    'footer footer';
-    grid-gap: 10px;
-    }
-    .header {
-    grid-area: header;
-    }
-    .sidebar {
-    grid-area: sidebar;
-    }
-    .content {
-    grid-area: content;
-    }
-    .footer {
-    grid-area: footer;
-    }
-
-    
+.cupcake-ipsum-container{
+    padding-top: 20px;
+    margin: 200px;
+    text-align: center;
+    width: 750px;
+    height: 400px;
+    overflow: scroll;
+     border: double 10px grey;
+}

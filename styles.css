@@ -1,144 +1,124 @@
-/* General styles go here these styles affect the page as a whole */
- .body {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
-    margin-left: 200px;
-    width: 90vw;
-    height: 100%;
-}
+/* ________________________----------------general styles -----------_______________________________*/
 
-main {
-  background-color: #D3D3D3;
-  width: 80vw;
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 100;
   height: 100%;
-  color: white;
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 1em;
-  border-width: 5px;
-  border-style: double;
-  border-color: #838282;
-  margin-left: 200px;
 }
 
-
-
-.banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/meme.png");
-  height: 50%;
-  width: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: center;
-  position: absolute;
-
-  color: white;
-}
-
-
-
-
-
-
-
-
-
-/* navbar class nav styles */
-/* These are the general styles for my nav for things such as the background color and positioning */
-nav {
-  background-color: #a9a9a9;
-  /* this makes the background color darker than the resting state but not as dark as the footer */
+ main {
   position: fixed;
-  left: 0;
-  top: 0;
-  /* this indicates that the position of my footer will be fixed used in combination with */
-  height: 100vh;
-  width: 200px;
-  z-index: -1;
-  border-top-right-radius: 1em;
-  list-style: none;
-}
-
-nav a {
-
-  text-decoration: none;
-  font-size: 25px;
-  color: #D3D3D3;
-  width: 200px;
-  text-align: center;
-}
-
-nav a:hover {
-  color: white;
-}
-
-nav ul{
-  list-style: none;
-}
-
-/* styles for my sidebars list elements */
-nav li {
-  list-style-type: none;
-}
+    width: 80vw;
+    height: 100vh;
+    margin-left: 20%;
+ }
+ 
 
 
-.sectiontxt{
-  border: 2px solid grey;
-}
+ 
+/* ________________________----------------Styles for my header -----------_______________________________*/
 
 
+  header {
+    width: 100%;
+    height: 50%;
+  }
+
+  header h1 {
+    background-color: rgb(246, 246, 244);
+    font-size: 3em;
+    font-weight: 600;
+    color: #1f221f;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+ header p {
+    text-align: left;
+  }
+
+ header img {
+margin-left: 20%;
+  top: 80%;
+  }
+
+  .objectives{
+    background-color: white;
+    bottom: 0;
+  }
+
+  .objectives{
+    background-color: white;
+    padding: 10px;
+  }
 
 
+/* ________________________----------------Styles for my sidebar -----------_______________________________*/
 
+    .sidebar {
+      background-color: #a9a9a9;
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 20%;
+      z-index: -1;
+      border-top-right-radius: 1em;
+    }
 
-/* nav footer styles */
-/* ______________________________________________________________________________________________________ */
-.sfooter {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  /* position in combination with left and bottom keeps my footer fixed to the bottom left of my page in one spot */
-  background-color: #838282;
-  /* changes the background color of my footer to a darker color than my nav  */
-  z-index: 1;
-  /* since I used a z-index of -1 on my nav using 1 puts my footer on top of my nav  */
+    .sidebar a {
+      text-decoration: none;
+      font-size: 35px;
+      color: #D3D3D3;
+      width: 100%;
+      text-align: center;
+      display: block;
+      padding: 10px;
+    }
 
-}
+    .sidebar a:hover {
+      color: white;
+      font-weight: 600;
+    }
 
-/* These styles style the "a" or link element I had to use them to remove the default blue color and underline */
-.sfooter a {
-  text-decoration: none;
-  /* removes the default markings */
-  color: #D3d3d3;
-  /* changes the color from blue to a light grey  */
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
 
-}
+    /* ________________________----------------Styles for my footer -----------_______________________________*/
+   
+    .sfooter {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      background-color: #838282;
+      z-index: 1;
+      width: 20%;
+    }
 
+    .sfooter a {
+      font-size: 25px;
+      text-decoration: none;
+      color: #D3d3d3;
+    
+    }
 
-.sfooter ul {
-  width: 200px;
-  /* makes the width of the list 200px  */
-  padding: 0%;
-  margin: 0%;
-  /* removes the default spacing */
-}
+    .sfooter ul {
+      list-style-type: none;
+      padding: 0%;
+      margin: 0%;
+    }
 
-/* this code block focuses on the list elements */
-.sfooter li {
-  color: #D3d3d3;
-  /* The links are alread grey because of the link style i did earlier but this change the color of my copywrite info */
-  background-color: #838282;
-  /* changes the background of my nav footer to a color darker than my nav  */
-  text-align: center;
-  /* centers the text for each list item */
-}
+    .sfooter li {
+      color: #D3d3d3;
+      background-color: #838282;
+      text-align: center;
+    }
 
-/* adds an action so when users hover they know its a link */
-.sfooter a:hover {
-  color: white;
-  /* the color changes from the resting state grey to white */
-  font-weight: 600;
-  /* the font gets bolder to emphasize that its a link */
-}
+    .sfooter a:hover {
+      color: white;
+      font-weight: 600;
+    }
