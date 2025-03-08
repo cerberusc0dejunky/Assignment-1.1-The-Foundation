@@ -1,52 +1,57 @@
-/* ________________________----------------general styles -----------_______________________________*/
+/* I made the styles for this bland and basic so I could see the differences I know it didnt call for a lot of css but in the instructions it did say "• Create a nice look and feel for the user." also I also wanted to make note Im having trouble doing the comments after every line I have lupus and its hit and miss which days its going to effect my cognitive functions and I have a hard time following my own code with comments in between so i hope its ok if I do blocks  */
+
+7/* ________________________----------------general styles -----------_______________________________*/
+
 
 .body {
-  display: flex;
-  flex-direction: column;
-  width: 100;
-  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
+
+/* 
+Any styles styled with the body tag affect the whole page. I set the font family to first ook for arial, then helvetica and if nothing else just a general sans-serif. I set vh and vw for heigh and width because I feel like it makes the page more responsive. The width and height will use those to adjust based on the users device. 
+*/
 
 main {
   position: fixed;
-  width: 80vw;
-  height: 100vh;
+  width: 80%;
+  height: 100%;
   margin-left: 20%;
 }
 
-
+/* 
+I made a main box to sit opposite of my sidebar since its parent is body and i set it to 80vw it will only take up 80% of the body while my sidebar takes up the remaining 20% and the full height. I set the position to fixed like I did with my sidebar
+*/
 
 
 /* ________________________----------------Styles for my header -----------_______________________________*/
 
-
 header {
+  background-color: #858e85;
   width: 100%;
   height: 50%;
 }
 
-header h1 {
-  background-color: rgb(246, 246, 244);
+h1 {
   font-size: 3em;
   font-weight: 600;
   color: #1f221f;
   text-align: center;
-  margin-top: 50px;
 }
 
-header p {
-  text-align: left;
-}
 
-header img {
-  margin-left: 20%;
-  top: 80%;
-}
+/* Going over this one a second time I think the h1 can be styled with just h1 and header h1 seems the same either way. I read somewhere that combining em sizes with vw and vh makes the font responsive as well. I wanted the h1 to really stand out so I made it a thick (font-weight) and black (color) then aligned it to the center.
+*/
+
+
 
 .objectives {
   background-color: white;
   padding: 10px;
 }
+
+/* When I tried to style this the first time I realized since the fox was inside the paragraph it gave him a white background too. so I gave the header p on this page a class of objectives to seperate it. and added a 10px padding between the content and the border.  */
 
 
 /* ________________________----------------Styles for my sidebar -----------_______________________________*/
@@ -56,32 +61,41 @@ header img {
   position: fixed;
   left: 0;
   top: 0;
-  height: 100vh;
+  height: 100%;
   width: 20%;
   z-index: -1;
   border-top-right-radius: 1em;
 }
 
+/* I set the background of the whole side bar to grey and made the position fixed in combination with eleft and top so it goes all the way to the top and all the way to the left. I set te width to 20% so it takes up what the main container doesnt and gave it a z-index of -1. I know we didnt learn this one in class I learned this on my own. for boxes with Positions the z-index creates a layer order. I have my sidebar on the bottom. and I rounded the corners with em like we did in class. 
+ */
+
 .sidebar a {
   text-decoration: none;
-  font-size: 35px;
+  font-size: 35em;
   color: #D3D3D3;
-  width: 100%;
   text-align: center;
-  display: block;
   padding: 10px;
 }
+
+/* 
+since a is a link it makes sense that you use text-decoration on sidebar links to remove the default underline and color blue so I did that so I could add a hover effect later. I made them resting state grey and  aligned the text ot the center. and added spacebetween the content and the border with padding
+*/
 
 .sidebar a:hover {
   color: white;
   font-weight: 600;
 }
 
+/* For the hover affect I made the color change from resting state grey to white and the font gets thicker to indiccate there is something there to click */
+
 .sidebar ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
+/* I used list-style-type none here i kept getting confused by these because sometimes its easy to put them in the wrong place but this one definetly goes here because list-style-type defines the type of list your gonna have like numbers bullets ect using none and combining it with 0 padding and 0 margin removes all default styles from the list */
 
 /* ________________________----------------Styles for my footer -----------_______________________________*/
 
@@ -93,9 +107,11 @@ header img {
   z-index: 1;
   width: 20%;
 }
-
+/* I pretty much just mirrored what I did for my sidebar to my footer. except the first two are connected to a placeholder page and the last one is just text not a link
+ */
+ 
 .sfooter a {
-  font-size: 25px;
+  font-size: 25em;
   text-decoration: none;
   color: #D3d3d3;
 
